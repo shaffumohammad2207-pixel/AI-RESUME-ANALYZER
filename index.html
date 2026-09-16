@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Builder | Create Your Resume</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>AI</span> Resume
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="templates.html">Templates</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ Smart Resume Builder
+            </div>
+
+            <h1>
+                Build a Resume That
+                <span>Gets Noticed.</span>
+            </h1>
+
+            <p>
+                Create a professional resume in minutes.
+                Enter your details, choose a template and generate
+                your resume instantly.
+            </p>
+
+            <a href="#resume-form" class="primary-btn">
+                Create My Resume →
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="mini-resume">
+
+                <div class="mini-header">
+                    <div class="profile-circle">JD</div>
+
+                    <div>
+                        <h3>John Doe</h3>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+
+                <div class="mini-line"></div>
+
+                <div class="mini-section"></div>
+                <div class="mini-small"></div>
+                <div class="mini-small"></div>
+
+                <div class="mini-section"></div>
+                <div class="mini-small"></div>
+                <div class="mini-small"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORM -->
+    <main class="form-container" id="resume-form">
+
+        <div class="section-heading">
+
+            <p class="section-label">STEP 01</p>
+
+            <h2>Tell us about yourself</h2>
+
+            <p>
+                Enter your information below. You can update everything
+                later before downloading your resume.
+            </p>
+
+        </div>
+
+
+        <form id="resumeForm">
+
+            <!-- PERSONAL INFORMATION -->
+            <div class="form-card">
+
+                <h3>👤 Personal Information</h3>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Full Name *</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Job Title / Career</label>
+                        <input
+                            type="text"
+                            id="jobTitle"
+                            placeholder="e.g. Software Developer"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@gmail.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone *</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+91 9876543210"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Location</label>
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Rajahmundry, Andhra Pradesh"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Profile Type</label>
+
+                        <select id="profileType">
+
+                            <option value="Student">
+                                Student
+                            </option>
+
+                            <option value="Fresher">
+                                Fresher
+                            </option>
+
+                            <option value="Professional">
+                                Working Professional
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group full-width">
+
+                        <label>Career Objective</label>
+
+                        <textarea
+                            id="objective"
+                            rows="4"
+                            placeholder="Write a short professional objective..."
+                        ></textarea>
+
+                        <button
+                            type="button"
+                            class="ai-btn"
+                            onclick="generateObjective()"
+                        >
+                            ✨ Generate Objective
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+            <div class="form-card">
+
+                <h3>🎓 Education</h3>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Degree</label>
+                        <input
+                            type="text"
+                            id="degree"
+                            placeholder="B.Tech Computer Science"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>College / University</label>
+                        <input
+                            type="text"
+                            id="college"
+                            placeholder="Your College Name"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Graduation Year</label>
+                        <input
+                            type="text"
+                            id="graduation"
+                            placeholder="2027"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>CGPA / Percentage</label>
+                        <input
+                            type="text"
+                            id="cgpa"
+                            placeholder="8.2 CGPA"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SKILLS -->
+            <div class="form-card">
+
+                <h3>💻 Skills</h3>
+
+                <div class="input-group">
+
+                    <label>
+                        Skills
+                        <small>Separate skills using commas</small>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="skills"
+                        placeholder="HTML, CSS, JavaScript, Python, SQL"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECTS -->
+            <div class="form-card">
+
+                <h3>🚀 Projects</h3>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Project Name</label>
+
+                        <input
+                            type="text"
+                            id="projectName"
+                            placeholder="AI Resume Builder"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Technologies</label>
+
+                        <input
+                            type="text"
+                            id="projectTech"
+                            placeholder="HTML, CSS, JavaScript"
+                        >
+                    </div>
+
+                    <div class="input-group full-width">
+
+                        <label>Project Description</label>
+
+                        <textarea
+                            id="projectDescription"
+                            rows="4"
+                            placeholder="Describe what you built..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPERIENCE -->
+            <div class="form-card">
+
+                <h3>💼 Experience</h3>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Company / Organization</label>
+
+                        <input
+                            type="text"
+                            id="company"
+                            placeholder="Company Name"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Role</label>
+
+                        <input
+                            type="text"
+                            id="role"
+                            placeholder="Intern / Developer"
+                        >
+                    </div>
+
+                    <div class="input-group full-width">
+
+                        <label>Experience Description</label>
+
+                        <textarea
+                            id="experience"
+                            rows="4"
+                            placeholder="Describe your responsibilities..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CERTIFICATIONS -->
+            <div class="form-card">
+
+                <h3>📜 Certifications</h3>
+
+                <div class="input-group">
+
+                    <label>Certifications</label>
+
+                    <textarea
+                        id="certifications"
+                        rows="3"
+                        placeholder="Python Certification, Web Development Certification"
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- LINKS -->
+            <div class="form-card">
+
+                <h3>🔗 Professional Links</h3>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>LinkedIn</label>
+
+                        <input
+                            type="text"
+                            id="linkedin"
+                            placeholder="linkedin.com/in/yourname"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>GitHub</label>
+
+                        <input
+                            type="text"
+                            id="github"
+                            placeholder="github.com/yourname"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Portfolio</label>
+
+                        <input
+                            type="text"
+                            id="portfolio"
+                            placeholder="yourportfolio.com"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTON -->
+            <div class="form-actions">
+
+                <button
+                    type="submit"
+                    class="primary-btn large-btn"
+                >
+                    Save Details & Choose Template →
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 AI Resume Builder. Built with HTML, CSS & JavaScript.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

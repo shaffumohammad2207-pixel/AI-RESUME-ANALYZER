@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Resume | AI Resume Builder</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar no-print">
+
+    <div class="logo">
+        <span>AI</span> Resume
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Edit
+        </a>
+
+        <a href="templates.html">
+            Templates
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="resume-page">
+
+
+    <div class="resume-toolbar no-print">
+
+        <div>
+
+            <h2>
+                Your Resume
+            </h2>
+
+            <p>
+                Review your resume before saving it.
+            </p>
+
+        </div>
+
+        <div class="toolbar-buttons">
+
+            <button
+                class="secondary-btn"
+                onclick="window.location.href='index.html'"
+            >
+                ← Edit Details
+            </button>
+
+            <button
+                class="primary-btn"
+                onclick="window.print()"
+            >
+                🖨 Print / Save PDF
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- GENERATED RESUME -->
+
+    <section
+        id="resumeOutput"
+        class="resume-paper"
+    >
+
+        <!-- JavaScript will insert resume here -->
+
+    </section>
+
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
