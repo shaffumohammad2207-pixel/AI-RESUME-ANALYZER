@@ -30,7 +30,7 @@ AI-RESUME-ANALYZER/
 
 ## 📸 Project Preview
 
-![AI Resume Analyzer](./Screenshot%202026-09-16%20221543.png)
+home-page.png
 
 ## 🚀 Live Demo
 
