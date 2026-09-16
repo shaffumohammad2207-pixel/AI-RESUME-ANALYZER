@@ -28,6 +28,10 @@ AI-RESUME-ANALYZER/
 ├── style.css
 └── script.js
 
+## 📸 Project Preview
+
+![AI Resume Analyzer](./Screenshot%202026-09-16%20221543.png)
+
 ## 🚀 Live Demo
 
 Visit the live website:
