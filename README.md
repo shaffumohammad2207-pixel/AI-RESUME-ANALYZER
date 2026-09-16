@@ -30,7 +30,7 @@ AI-RESUME-ANALYZER/
 
 ## 📸 Project Preview
 
-home-page.png
+Screenshot 2026-09-16 221543.png
 
 ## 🚀 Live Demo
 
