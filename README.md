@@ -32,7 +32,7 @@ AI-RESUME-ANALYZER/
 
 Visit the live website:
 
-YOUR-GITHUB-PAGES-LINK
+https://shaffumohammad2207-pixel.github.io/AI-RESUME-ANALYZER/
 
 ## 💻 How to Run
 
